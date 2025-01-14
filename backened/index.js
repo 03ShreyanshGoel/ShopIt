@@ -23,7 +23,7 @@ app.post(
 app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.json({ msg: "Welcome to chawkbazar" });
+  res.json({ msg: "Welcome to ShopIt!" });
 });
 
 app.use("/api", userRoutes);

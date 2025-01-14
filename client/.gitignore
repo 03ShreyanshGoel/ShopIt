@@ -1,3 +1,8 @@
-node_modules
-build
+# Node.js dependencies
+node_modules/
+
+# Build outputs
+build/
+
+# Environment variables
 .env
