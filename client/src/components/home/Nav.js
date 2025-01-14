@@ -5,28 +5,35 @@ import { useSelector } from "react-redux";
 import Search from "./Search";
 import { useDispatch } from "react-redux";
 import { toggleSearchBar } from "../../store/reducers/globalReducer";
+
 const Nav = () => {
   const { userToken, user } = useSelector((state) => state.authReducer);
   const { searchBar } = useSelector((state) => state.globalReducer);
   const { items } = useSelector((state) => state.cartReducer);
   const dispatch = useDispatch();
+
   return (
     <>
       <nav className="nav">
         <div className="my-container">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
-              <Link to="/" className="">
+              <Link to="/" className="flex items-center">
                 <img
                   src="/logo.png"
                   className="h-[100px] object-cover"
                   alt="logo"
                 />
-
+                <p
+                  className="hidden sm:block" // This will hide the name on screens smaller than 'sm'
+                  style={{
+                    fontFamily: '"DM Serif Text", serif',
+                    fontSize: "42px",
+                  }}
+                >
+                  ShopIt
+                </p>
               </Link>
-              <p style={{
-                fontFamily: '"DM Serif Text", serif', fontSize:"42px"
-              }}>ShopIt</p>
             </div>
             <ul className="flex items-center">
               <li className="nav-li cursor-pointer">
