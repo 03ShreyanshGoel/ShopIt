@@ -49,7 +49,7 @@ class PaymentController {
             type: "fixed_amount",
             fixed_amount: {
               amount: 0,
-              currency: "inr", // Changed to INR
+              currency: "inr", // Updated to INR
             },
             display_name: "Free shipping",
             delivery_estimate: {
@@ -69,15 +69,16 @@ class PaymentController {
         console.log("Creating line item for:", item);
         const percentage = item.discount / 100;
         let actualPrice = Math.round(item.price - item.price * percentage);
-        actualPrice = parseFloat(actualPrice) * 100; // Convert to smallest unit
-        actualPrice = actualPrice.toFixed(2);
+        actualPrice = parseFloat(actualPrice) * 100; // Convert to paise
+        actualPrice = actualPrice.toFixed(0); // Ensure no decimal points
+
         return {
           price_data: {
-            currency: "inr", // Changed to INR
+            currency: "inr", // Updated to INR
             product_data: {
               name: item.title,
             },
-            unit_amount_decimal: actualPrice,
+            unit_amount: actualPrice, // Fixed conversion for INR
           },
           quantity: item.quantity,
         };
