@@ -1,6 +1,6 @@
 # 🌟 ShopIt Documentation 🌟
 
-## 📅 Overview
+## 🗕️ Overview
 
 ShopIt is a full-stack e-commerce platform developed using the **MERN stack** (MongoDB, Express.js, React.js, Node.js) with additional tools like **Redux** for state management and **TailwindCSS** for styling. The platform supports secure user authentication, payment processing through **Stripe**, and **JWT** for secure login sessions. It also features an admin dashboard for product, order, and category management.
 
@@ -40,7 +40,7 @@ ShopIt is a full-stack e-commerce platform developed using the **MERN stack** (M
 
 ## 📝 Installation & Setup
 
-### 📅 Prerequisites
+### 🗕️ Prerequisites
 
 - 💻 Node.js
 - 🔍 MongoDB (local or cloud-based)
@@ -192,15 +192,45 @@ The frontend is deployed on **Vercel** and the backend is deployed on **Render**
 
 ---
 
+## 💥 Troubleshooting
+
+### 🔍 Common Issues
+
+1. **🚸 Backend Not Starting:**
+   - Ensure your `.env` file is correctly configured.
+   - Check if MongoDB is running.
+   - Verify your Stripe and Cloudinary credentials.
+
+2. **🚨 Frontend Errors:**
+   - Confirm API URL in the frontend `.env` file matches the backend URL.
+   - Ensure all environment variables are correctly set.
+
+3. **💩 Payment Failures:**
+   - Double-check Stripe keys.
+   - Test with Stripe’s test mode before going live.
+
+4. **📦 Image Upload Issues:**
+   - Verify Cloudinary configuration.
+   - Ensure upload presets are correctly set in Cloudinary.
+
+### 💡 Tips
+
+- Use browser developer tools to debug frontend issues.
+- Check server logs for backend errors.
+- Ensure all dependencies are up-to-date by running `npm update`.
+- Test API endpoints using tools like Postman.
+
+---
+
 ## 💪 Contributing
 
 Contributions are welcome! Please fork the repository, make your changes, and submit a pull request.
 
 1. 🔠 Fork the repo.
 2. 🔄 Create your feature branch (`git checkout -b feature/AmazingFeature`).
-3. 📅 Commit your changes (`git commit -m 'Add some AmazingFeature'`).
+3. 🗕️ Commit your changes (`git commit -m 'Add some AmazingFeature'`).
 4. 🔄 Push to the branch (`git push origin feature/AmazingFeature`).
-5. 📅 Open a pull request.
+5. 🗕️ Open a pull request.
 
 ---
 
@@ -214,6 +244,6 @@ This project is licensed under the ISC License - see the LICENSE file for detail
 
 For any inquiries or feedback, feel free to contact:
 
-- **GitHub:** [GitHub Profile](https://github.com/03ShreyanshGoel)
+- **🔗 GitHub:** [GitHub Profile](https://github.com/03ShreyanshGoel)
 - **🔗 Live Demo:** [ShopIt Live Demo](https://shopit-ecommerce.vercel.app)
 
