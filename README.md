@@ -245,5 +245,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 For any inquiries or feedback, feel free to contact:
 
 - **🔗 GitHub:** [GitHub Profile](https://github.com/03ShreyanshGoel)
-- **🔗 Live Demo:** [ShopIt Live Demo](https://shopit-ecommerce.vercel.app)
+- **🔗 Live Demo:** [ShopIt Live Demo](https://shopit-store.vercel.app)
 
